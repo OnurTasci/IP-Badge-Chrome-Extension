@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "IP Badge Info",
+  "version": "1.0",
+  "description": "Shows the IP address on the badge, along with the flag icon.",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": [
+    "https://api.ipify.org/",
+    "https://ipapi.co/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/default.png"
+    }
+  },
+  "options_page": "options.html"
+}
